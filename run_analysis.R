@@ -43,3 +43,4 @@ data.out<-rbind(data.by_activity,data.by_subject)
 #write the output
 #for some reason, it's required that the row names are removed. This makes the dataset harder to understand
 write.table(data.out,file="output.txt",row.names=FALSE)
+write.table(data.out,file="output-named.txt")
